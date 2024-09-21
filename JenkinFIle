@@ -9,7 +9,8 @@ stage('SCM checkout')
 
 
 stage('print your message')
- {steps { sh 'echo hello'  }}       //sh=execute shell
+ {steps { sh 'echo hello' 
+          sh 'echo Pratahemsh'}}       //sh=execute shell
 
 }
 }
