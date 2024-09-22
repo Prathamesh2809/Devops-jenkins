@@ -9,8 +9,8 @@ stage('SCM checkout')
 
 
 stage('print your message')
- {steps { sh 'echo hello' 
-          sh 'echo Pratahemsh'}}       //sh=execute shell
-
+ {steps {withMaven(globalMavenSettingsConfig: '', jdk: '', maven: 'MAVEN-_HOME', mavenSettingsConfig: '', traceability: true) {
+    sh 'mvn compile'
+}
 }
 }
