@@ -9,8 +9,8 @@ stage('SCM checkout')
 
 
 stage('print your message')
- {steps {withMaven(globalMavenSettingsConfig: '', jdk: '', maven: 'MAVEN-_HOME', mavenSettingsConfig: '', traceability: true) {
-    sh 'mvn compile'     //compipling code
+ {steps withMaven(globalMavenSettingsConfig: '', jdk: 'JDK_HOME', maven: 'MAVEN-_HOME', mavenSettingsConfig: '', traceability: true) {
+    sh 'mvn compile'     // some block
 }
 }
 }
