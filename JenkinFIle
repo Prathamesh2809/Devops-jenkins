@@ -10,7 +10,7 @@ stage('SCM checkout')
 
 stage('print your message')
  {steps {withMaven(globalMavenSettingsConfig: '', jdk: '', maven: 'MAVEN-_HOME', mavenSettingsConfig: '', traceability: true) {
-    sh 'mvn compile'
+    sh 'mvn compile'     //compipling code
 }
 }
 }
